@@ -1,4 +1,4 @@
-This project as adapted from my MSX DE1 hat for DE1 (https://github.com/costarc/MSX_DE1_Hat).
+This project as adapted from my MSX DE1 hat for DE1 (https://github.com/costarc/MSX_FPGA_Hat).
 
 The MSX version was fabricated, tested and verified to work.
 

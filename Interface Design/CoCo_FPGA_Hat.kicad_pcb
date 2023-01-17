@@ -3741,7 +3741,7 @@
   (gr_text "Q\nD7" (at 81.66 39.65) (layer "F.SilkS") (tstamp 1b730c06-51b8-4819-9661-99863615a1ae)
     (effects (font (size 0.5 0.5) (thickness 0.125)))
   )
-  (gr_text "CoCo FPGA Hat \nDE0 Rev.0" (at 114.14 65.29) (layer "F.SilkS") (tstamp 2352d976-fb5e-4e42-b9ee-f3d5ad4b7d30)
+  (gr_text "CoCo FPGA Hat \nDE0/DE1 Rev.0" (at 114.14 65.29) (layer "F.SilkS") (tstamp 2352d976-fb5e-4e42-b9ee-f3d5ad4b7d30)
     (effects (font (size 0.7 0.7) (thickness 0.15)) (justify right))
   )
   (gr_text "3V\nGND" (at 76.71 39.61) (layer "F.SilkS") (tstamp 2c0e6e29-aa58-4ffd-86b1-e6d660719bfe)

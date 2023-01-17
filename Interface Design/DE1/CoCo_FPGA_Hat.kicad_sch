@@ -849,11 +849,11 @@
         )
       )
     )
-    (symbol "Roni Symbols:CoCo_Slot" (in_bom yes) (on_board yes)
+    (symbol "Roni Symbols:CoCo_Slot_BarePCB" (in_bom yes) (on_board yes)
       (property "Reference" "P" (id 0) (at 10.16 40.64 0)
         (effects (font (size 1.27 1.0795)) (justify left bottom))
       )
-      (property "Value" "CoCo_Slot" (id 1) (at 0 0 0)
+      (property "Value" "CoCo_Slot_BarePCB" (id 1) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Footprint" "CoCoEPROMpak:COCO-CART-2.1X1.75" (id 2) (at 0 0 0)
@@ -865,37 +865,9 @@
       (property "ki_locked" "" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)))
       )
-      (symbol "CoCo_Slot_1_0"
-        (polyline
-          (pts
-            (xy -10.16 -45.72)
-            (xy -10.16 40.64)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -10.16 40.64)
-            (xy 10.16 40.64)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.16 -45.72)
-            (xy -10.16 -45.72)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.16 40.64)
-            (xy 10.16 -45.72)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
+      (symbol "CoCo_Slot_BarePCB_1_0"
+        (rectangle (start -10.16 40.64) (end 10.16 -45.72)
+          (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
         (pin passive line (at 5.08 45.72 270) (length 5.08)
@@ -1057,14 +1029,6 @@
         (pin passive line (at -5.08 45.72 270) (length 5.08)
           (name "+5V" (effects (font (size 1.27 1.27))))
           (number "9" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -50.8 90) (length 5.08)
-          (name "MTG@1" (effects (font (size 1.27 1.27))))
-          (number "MTG1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -2.54 -50.8 90) (length 5.08)
-          (name "MTG@2" (effects (font (size 1.27 1.27))))
-          (number "MTG2" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -2660,7 +2624,7 @@
     (pin "1" (uuid d2eb1981-3b0f-4e01-bc1b-192117df1636))
   )
 
-  (symbol (lib_id "Roni Symbols:CoCo_Slot") (at 45.72 87.376 0) (unit 1)
+  (symbol (lib_id "Roni Symbols:CoCo_Slot_BarePCB") (at 45.72 87.376 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 552ad639-2842-4abd-bb2c-fd942f893612)
     (property "Reference" "P1" (id 0) (at 52.8194 44.196 0)
@@ -2669,7 +2633,7 @@
     (property "Value" "CoCo_Slot" (id 1) (at 45.72 87.376 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Roni Footprints:COCO-CART-HAT" (id 2) (at 45.72 87.376 0)
+    (property "Footprint" "CoCoEPROMpak:COCO-CART-2.1X1.75" (id 2) (at 45.72 87.376 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 45.72 87.376 0)
@@ -2715,8 +2679,6 @@
     (pin "7" (uuid 6d3f90ba-9738-4095-9d10-f0bb1629f45a))
     (pin "8" (uuid 062bdf63-654f-497f-ba87-0c43a116aea7))
     (pin "9" (uuid 1e564d31-f6f1-4fe7-9f2e-24cf0f0a4a35))
-    (pin "MTG1" (uuid 462af735-f764-4ce1-8531-a79e4f795f57))
-    (pin "MTG2" (uuid a3fe26cd-3d39-455f-ac89-673b1dd41bda))
   )
 
   (symbol (lib_id "Device:R_Small_US") (at 93.472 123.698 0) (unit 1)
@@ -3302,7 +3264,7 @@
       (reference "J1") (unit 1) (value "J1") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
     (path "/552ad639-2842-4abd-bb2c-fd942f893612"
-      (reference "P1") (unit 1) (value "CoCo_Slot") (footprint "Roni Footprints:COCO-CART-HAT")
+      (reference "P1") (unit 1) (value "CoCo_Slot") (footprint "CoCoEPROMpak:COCO-CART-2.1X1.75")
     )
     (path "/75b8a547-7dbb-4ae6-a265-87342b091832"
       (reference "R1") (unit 1) (value "10K") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")

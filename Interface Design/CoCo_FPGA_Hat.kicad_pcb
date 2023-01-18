@@ -6,9 +6,9 @@
 
   (paper "A5")
   (title_block
-    (title "MSX DE1 Hat")
-    (date "2023-01-09")
-    (rev "1.1")
+    (title "CoCo DE0/DE1 Hat")
+    (date "2023-01-18")
+    (rev "0")
     (company "RCC")
   )
 

@@ -6,8 +6,8 @@
 
   (title_block
     (title "CoCo FPGA Hat (DE0 & DE1 Compatible)")
-    (date "2023-01-17")
-    (rev "Rev 0")
+    (date "2023-01-18")
+    (rev "0")
     (company "RCC")
     (comment 1 "to 3.3v systems with voltage conversion")
     (comment 2 "Cartridge for TRS-80 Color Computers that expose the Computer BUS")
@@ -2640,7 +2640,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 6f9656b3-3bfe-4b00-abcb-824b6a0202a0)
     (property "Reference" "IDC1" (id 0) (at 160.528 40.64 0))
-    (property "Value" "DE0 GPIO" (id 1) (at 160.528 43.18 0))
+    (property "Value" "DE0/DE1 GPIO" (id 1) (at 160.528 43.18 0))
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" (id 2) (at 159.258 70.358 0)
       (effects (font (size 1 1)) hide)
     )
@@ -3191,7 +3191,7 @@
       (reference "C4") (unit 1) (value "0.1uf") (footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm")
     )
     (path "/6f9656b3-3bfe-4b00-abcb-824b6a0202a0"
-      (reference "IDC1") (unit 1) (value "DE0 GPIO") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical")
+      (reference "IDC1") (unit 1) (value "DE0/DE1 GPIO") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical")
     )
     (path "/4b627ac7-f426-4ad6-aa9a-a3c2759a25ab"
       (reference "J1") (unit 1) (value "J1") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")

@@ -27,7 +27,8 @@ U1 has a pull-up in the /OE pin, to keep any output disabled until the FPGA driv
 # Controlling Flow of Data in the Interface
 The recommended method to drive the interace signals is as follows:
 
-U1 bus direction (pin 1): no additional implementaton is required - this pin is controlled automatically by the computer according his operations. For example, in the MSX computer, when requesting data from the FPGA, this pin is asserted LOW by RD_n = 0, when sending data it is asserted HIGH because RD_n will be HIGH.
+U1 bus direction (pin 1): no additional implementaton is required - this pin is controlled automatically by the computer according his operations. For example, when the CoCo computer is requesting data from the FPGA, this pin is asserted HIGH by *R/W = 1, when sending data it is asserted LOW because *R/W = 0.
+Note that the FPGA pins are connected on the bus A of U1, and CoCo bus is connected in the bus B of U1 - this allowed both keep the CIs all aligned in the same direction and use the CoCo *R/W signal to drive the directon of this bus).
 
 U1 /OE (Output Enable, pin 19): This pin should be put in LOW whenever the FPGA detects that it is being requested - for example, if a ROM is implemented in the FPGA, the address and slot decoding should detect and assert according the GPIO pin /C_U1_D_OE (name was meant to stand for "CI U1, computer Data bus, pin OE).
 
@@ -39,8 +40,7 @@ The interface has some pins being used to carry data from the FPG to the compute
 The limited number of GPIOs in the development board require that we do some compromises in the design.
 Some of the less used signals were routed to jumpers, at which point they can be selected to be sent to the FPGA.
 
-J1 allow to select one of /CS1, /CS2 and /CS12 to send to FPGA connector pin 3 (/C_CS_SLT).
-J2 allow to select either CLOCK or /RESET signal to send to FPGA connector pin 1 (C_CLK_OR_RST).
+J1 allow to select one of *SLENB OR *NMI to B be connected to FPGA connector pin 39 (/C_NMI_SLENB).
 
 # Other Important Considerations
 

@@ -1,7 +1,13 @@
+# CoCo_FPGA_Hat
+A Cartridge interface that converts TRS-Color 5v signal levels in the bus to 3.3v, exposed over an IDC connector for external devices that operates at 3.3v level.
+
+Allow the use of FGPA development boards such as Terasic DE0 and DE1 as generic peripherals.
+
 This project as adapted from my MSX DE1 hat for DE1 (https://github.com/costarc/MSX_FPGA_Hat).
 
-The MSX version was fabricated, tested and verified to work.
 
-This CoCo version was not tested yet, therefore you use it at your own risks.
+THIS IS WORKING IN PROGRESS. THE BOARD IS BEING TESTED, AND REFERENCE DESIGNS CREATED.
 
-As soon as I fabricate and assembly this PCB, I will update this README with actual status.
+THIS PROJECT IS NOT READY FOR FABRICATON!!
+
+IF YOU SEND FOR PRODUCTION, BE AWARE IT MIGHT NOT WORK, OR ONLY WORK WITH SEVERAL MANUAL FIXES TO THE BOARD.

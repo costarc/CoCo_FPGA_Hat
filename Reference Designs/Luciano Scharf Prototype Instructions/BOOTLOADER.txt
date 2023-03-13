@@ -1,0 +1,20 @@
+*LDA              #$00
+*LDA              #$00
+*LDA              #$00
+*LDA              #$00 	       
+               *LDA              #$00
+               *STA              $FF40
+
+	       LDX		#49170		; load code address(49152 + 18 this bootloader)
+	       LDU		#7600		; load destination address
+COPY	       LDD		,X+		; read 1 bytes
+	       STD		,U+		; write 1 bytes
+	       CMPX		#49170+43 	; 43bytes (size of loader)
+ 	       BNE		COPY
+
+	      ; JUMP TO GAME
+	      JMP		7600
+	
+
+HEX CODE:
+86 00 8E C0 12 CE 1D B0 EC 80 ED C0 8C C0 3D 26 F7 7E 1D B0

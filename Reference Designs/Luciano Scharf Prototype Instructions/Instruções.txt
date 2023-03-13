@@ -1,0 +1,3 @@
+[11:06, 22/02/2023] +55 48 8406-2662: Bom dia. Seguem os arquivos contendo os exemplos de loader e bootloader com bank switch.
+[11:09, 22/02/2023] +55 48 8406-2662: O último arquivo enviado contem a rom que foi gravada na eeprom, vc poderá testar no emulador de preferência, basta carregar o cartucho GMC e selecionar a rom "final"
+[11:10, 22/02/2023] +55 48 8406-2662: mandei as intermediárias ara ficar tranquilo de entender, banco 0 vai o bootloader + loader, banco 1 a tuts1 e banco 2 a tuts2, ao adicionar cada banco completar com zeros até fechar 16384 em cada banco.

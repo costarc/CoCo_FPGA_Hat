@@ -1,0 +1,45 @@
+               LDA              #$01
+               STA              $FF40
+
+	       LDX		#49152		; load code address
+	       LDU		#7680		; load destination address
+COPY	       LDD		,X+		; read 1 bytes
+	       STD		,U+		; write 1 byte
+	       CMPX		#49152+15000 	; 
+ 	       BNE		COPY
+
+	       LDA              #$02
+               STA              $FF40
+
+	       LDX		#49152		; load code address
+	       LDU		#22680		; load destination address
+COPY2	       LDD		,X+		; read 1 bytes
+	       STD		,U+		; write 1 byte
+	       CMPX		#49152+9817 	; 
+ 	       BNE		COPY2
+
+
+	      ; JUMP TO GAME
+	      JMP		8000
+
+COMPILED: http://6809.uk/
+	
+4000:	86 01         	LDA #$01
+4002:	B7 FF 40      	STA $FF40
+4005:	8E C0 00      	LDX #$C000
+4008:	CE 1E 00      	LDU #$1E00
+400B:	EC 80         	LDD ,X+
+400D:	ED C0         	STD ,U+
+400F:	8C FA 98      	CMPX #$FA98
+4012:	26 F7         	BNE COPY
+4014:	86 02         	LDA #$02
+4016:	B7 FF 40      	STA $FF40
+4019:	8E C0 00      	LDX #$C000
+401C:	CE 58 98      	LDU #$5898
+401F:	EC 80         	LDD ,X+
+4021:	ED C0         	STD ,U+
+4023:	8C E6 59      	CMPX #$E659
+4026:	26 F7         	BNE COPY2
+4028:	7E 1F 40      	JMP $1F40
+
+	   

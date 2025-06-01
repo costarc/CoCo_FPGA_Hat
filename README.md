@@ -1,7 +1,7 @@
 # CoCo_FPGA_Hat
 A Cartridge interface that converts TRS-Color 5v signal levels in the bus to 3.3v, exposed over an IDC connector for external devices that operates at 3.3v level.
 
-Even though this project was developed and tested with FPGA development boards Terasic DE0 and DE1, the interface can actually interface with any 3.3v device, even microcontrollers, to implemente peripherals for the TRS-80 Color computer.s
+Even though this project was developed and tested with FPGA development boards Terasic DE0 and DE1, the interface can actually interface with any 3.3v device, even microcontrollers, to implement peripherals for the TRS-80 Color computer.
 
 This project as adapted from my MSX DE1 hat for DE1 (https://github.com/costarc/MSX_FPGA_Hat).
 

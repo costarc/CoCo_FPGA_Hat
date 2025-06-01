@@ -1,9 +1,9 @@
 Design: Multi_Cartridge
 
-Function: Demonstrate how to implement a game cartridge using
+Function: Demonstrate how to implement a game cartridge using the CoCo_FPGA_Hat.
 
-Features: 
- 1. Implement a ROM using the external Flashram in the board
+The following two sample desings are implemented using an Terasic DE1 development board.
+ 1. Implement a ROM using the Flashram in the FPGA development board
  2. Implement a ROM using the internal FPGA BlockRAM
 
 Quick Start Guide

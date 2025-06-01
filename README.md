@@ -1,12 +1,12 @@
 # CoCo_FPGA_Hat
 A Cartridge interface that converts TRS-Color 5v signal levels in the bus to 3.3v, exposed over an IDC connector for external devices that operates at 3.3v level.
 
-Allow the use of FGPA development boards such as Terasic DE0 and DE1 as generic peripherals.
+Even though this project was developed and tested with FPGA development boards Terasic DE0 and DE1, the interface can actually interface with any 3.3v device, even microcontrollers, to implemente peripherals for the TRS-80 Color computer.s
 
 This project as adapted from my MSX DE1 hat for DE1 (https://github.com/costarc/MSX_FPGA_Hat).
 
 
-THIS IS WORKING IN PROGRESS. THE BOARD IS BEING TESTED, AND REFERENCE DESIGNS CREATED.
+Project Status: RIP. Project was assembled and tested, proven to work. Sample test project is available in the folder Reference Designs, which demonstrate how to implement a Cartridge ROM using the interface and a connected Terasic DE0.
 
 THIS PROJECT IS NOT READY FOR FABRICATION!!
 
@@ -42,9 +42,12 @@ Some of the less used signals were routed to jumpers, at which point they can be
 
 J1 allow to select one of *SLENB OR *NMI to B be connected to FPGA connector pin 39 (/C_NMI_SLENB).
 
+# SRAM Addon
+Because some development boards (such as Terasic DE0) does not have a SRAM module, it makes it difficult to implement RAM cores due to DDRAM complexity.
+For this reason, I designed also a SRAM addon to plug to the DE0  GPIO. This design in in the folder "DE0_Addon_Board".
+
 # Other Important Considerations
 
 The interface was designed to be compatible with Terasic DEn series of boards. However, these boards present some differences in the GPIOs funtionalities, where some bords (like DE1) have 36 generic I/O pins avaialable fo rinput/output functions, and others like DE0 have four pins dedicated to either input or outputs. This is the case of pins 1 and 3, whch are input only pins, and 19, 21 which are output only.
 These differences were already considered in the reference designs, and these pins assigned to functions that will not case problems of limitations to the designs.
 If you want to change the pin mapping in the FPGA designs, pay attention to these pins - do not assign functions opposite to the directon they actually work.
-

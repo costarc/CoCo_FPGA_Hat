@@ -8,7 +8,7 @@ This project as adapted from my MSX DE1 hat for DE1 (https://github.com/costarc/
 
 Project Status: RIP. Project was assembled and tested, proven to work. Sample test project is available in the folder Reference Designs, which demonstrate how to implement a Cartridge ROM using the interface and a connected Terasic DE0.
 
-Because it was not extensively tested and no other designs developed, there might be limitations on what functions it might be able to implment, therefore fabricate at your own risk! :)
+Because it was not extensively tested and no other designs developed, there might be limitations on which functions it might be able to implement, therefore build at your own risk! :)
 
 
 
